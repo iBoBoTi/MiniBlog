@@ -1,0 +1,1 @@
+A `MiniBlog` using `Golang` and `MySQL (Database)`. It performs the basic `CRUD` operations
