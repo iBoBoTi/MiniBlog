@@ -1,0 +1,18 @@
+{{ template "base" . }}
+{{ define "nav" }}
+    <a href="/create" class="nav nav-item  nav-link">Add Post</a>
+{{end}}
+{{ define "main" }}
+    <div class="container">
+        <h1>Welcome to <strong>BLOGAR</strong></h1>
+        {{with .Posts}}
+        {{ range . }}
+        <a href="/{{.Id}}">
+            <div class="card">
+                <h3 class="card-title">{{ .Title }}</h3>
+            </div>
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+{{ end }}
