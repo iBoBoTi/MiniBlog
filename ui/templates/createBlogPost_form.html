@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="nav-wrapper">
+        <a href="/" class="navbar-brand">Blogar</a>
+    </div>
+</nav>
+<h1>Add Post:</h1>
+<div class="containers">
+    <form action="/add" method="Post">
+        <label for="Title" class="form-label">Title:</label>
+        <input id="Title" type="text" placeholder="Title" name="Title" >
+
+        <label for="Body" >Body:</label>
+        <textarea id="Body" name="Body" ></textarea>
+
+        <input type="submit" value="Post" />
+    </form>
+</div>
+
+</body>
+</html>
